@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=devce-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        />
+        <title>Graciella Natasha's CV</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Graphic Designer</p>
+                    <h1>Hi, my name is <span><br>Graciella Natasha</span></h1>
+                </div>
+            </div>
+        </div>
+        <!-------- About---------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/IMG_20211228_165125.jpg"> 
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Saya berstatus sebagai mahasiswa Desain Komunikasi Visual di Universitas Prima Indonesia. Selama perkuliahan, banyak yang saya pelajari, seperti, logo, sketsa, tipografi, fotografi, videografi, dan masih banyak lainnya yang berhubungan dengan dunia desain dan seni. Impian saya menjadi seorang Graphic Designer. Saya sudah belajar Adobe sejak masa SMA dan sekarang sedang mengasah skill 3D menggunakan aplikasi blender.</p>
+                    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Adobe</span><br>Adobe Illustrator, Adobe Photoshop, Adobe Premiere Pro, Adobe After Effect</li>
+                                <li><span>3D</span><br>Blender</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2023</span><br>Kursus Digital Kelas Adobe Illustrator</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------ Portfolio -------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Artwork</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Photoshoot</h3>
+                            <p></p>
+                            <a href="photoshoot.html"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Poster</h3>
+                            <p></p>
+                            <a href="poster.html"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Logo</h3>
+                            <p></p>
+                            <a href="logo.html"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-------- contact --------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fas fa-paper-plane"></i>grxntsha71@gmail.com</p>
+                        <p><i class="fas fa-phone"></i>+62 895-0897-0377</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/grace.tjia_"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/giftgrace-7"><i class="fab fa-github-alt"></i></a>
+                            <a href="https://www.tiktok.com/@grace.arts_"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://x.com/justU_gyul"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright <i class="far fa-copyright"></i> Graciella Natasha. Made with by Easy Tutorials</p>
+            </div>
+        </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontens = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontens){
+            tabcontent.classList.remove("active-tab");
+         }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+    </body>
+</html>
