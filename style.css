@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Arial', sans-serif;
     box-sizing: border-box;
 
 }
@@ -9,15 +9,16 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: lavender;
+    color: #000;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    background-image: url(images/Picsart_24-11-14_09-49-36-451.png);
     background-size: cover;
-    background-position: center;
+    background-position: right;
+    color: lavender;
 }
 .container{
     padding: 10px 10%;
@@ -42,7 +43,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: lavender;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -51,7 +52,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: lavender;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -67,14 +68,15 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
+    color: blueviolet;
 }
 .header-text h1 span{
-   color: #ff004f;
+   color: lavender;
 }
 /* -----about--------- */
 .about{
     padding: 80px 0;
-    color: #ababab;
+    color: lavender;
 }
 .row{
     display: flex;
@@ -95,7 +97,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: blueviolet;
 }
 .tab-titles{
     display: flex;
@@ -104,7 +106,7 @@ nav ul li a:hover::after{
 .tab-links{
     margin-right: 50px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     position: relative;
 }
@@ -112,7 +114,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: blueviolet;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -126,8 +128,9 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
-    font-size: 14px;
+    color:blueviolet;
+    font-size: 20px;
+    font-weight: bold;
 }
 .tab-contents{
     display: none;
@@ -160,7 +163,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0), blueviolet);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -175,16 +178,17 @@ nav ul li a:hover::after{
     transition: height 0.5s;
 }
 .layer h3{
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 20px;
+    color: lavender;
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: blueviolet;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: lavender;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -220,7 +224,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: blueviolet;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -231,24 +235,24 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: blueviolet;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: blueviolet;
     transform: translateY(-5px);
 }
 .copyright{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: blueviolet;
     font-weight: 300;
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: lavender;
 }
 /*------------css for small screen ------------ */
 nav .fas{
@@ -256,7 +260,7 @@ nav .fas{
 }
 @media only screen and (max-with: 600px){
     #header{
-        background-image: url(images/phone-background.png);
+        background-image: url(images/Picsart_24-11-14_09-49-36-451.png);
     }
     .header-text{
         margin-top: 100%;
@@ -270,7 +274,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: blueviolet;
         position: fixed;
         top: 0;
         right: -200px;
